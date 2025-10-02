@@ -23,6 +23,6 @@ docker run -it \
    * **extractions/file01.bin/** - directory containin the file01 extracted firmware
    * **extractions/file02.bin/** - directory containin the file02 extracted firmware
    * **firmware_diff_flat.json** - JSON containing full file paths
-   * **firmware_diff_tree.json** - JSON containing 
+   * **firmware_diff_tree.json** - JSON containing a tree structure of file paths
 
 ## Example Output
