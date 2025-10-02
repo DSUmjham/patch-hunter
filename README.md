@@ -27,3 +27,10 @@ docker run -it \
    * **firmware_diff_tree.json** - JSON containing a tree structure of file paths
 
 ## Example Output
+* [Flat JSON](https://github.com/DSUmjham/patch-hunter/blob/main/examples/firmware_diff_flat.json) of firmware diff between old and new firmware.
+
+![Flat JSON output](https://github.com/DSUmjham/patch-hunter/blob/main/images/json_flat.png?raw=true)
+
+* [Tree JSON](https://github.com/DSUmjham/patch-hunter/blob/main/examples/firmware_diff_tree.json) of firmware diff between old and new firmware.
+
+![Tree JSON output](https://github.com/DSUmjham/patch-hunter/blob/main/images/json_tree.png?raw=true)
