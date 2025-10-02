@@ -18,6 +18,7 @@ docker run -it \
   -e NEW_FW=file02.bin \
   patch-hunter
 ```
+![Running patch-hunter in Terinal](https://github.com/DSUmjham/patch-hunter/blob/main/images/docker-run.png?raw=true)
 
 4. All output files are stored in the **/patch-hunter/outputs** directory.
    * **extractions/file01.bin/** - directory containin the file01 extracted firmware
