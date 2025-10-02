@@ -1,5 +1,5 @@
 # patch-hunter
-The **patch-hunter** docker container ingests two subject firmware files (.bins) and performs automated patch analysis on them. This suite of tools generates extracted firmware images and allows analysts to quickly identify file modificaitons, additions, and deletions between two versions. 
+The **patch-hunter** Docker container ingests two subject firmware files (.bins) and performs automated patch analysis on them. This suite of tools generates extracted firmware images and allows analysts to quickly identify file modifications, additions, and deletions between two versions. 
 
 ## Running patch-hunter
 1. Build the Docker image after cloning it from this repo:
@@ -27,10 +27,12 @@ docker run -it \
    * **firmware_diff_tree.json** - JSON containing a tree structure of file paths
 
 ## Example Output
-* [Flat JSON](https://github.com/DSUmjham/patch-hunter/blob/main/examples/firmware_diff_flat.json) of firmware diff between old and new firmware.
+In addition to providing the extracted firmware samples, patch-hunter produces easily parsable JSON files to show any file modifications, additions, and deletions. You can find sample .json files in the [examples](https://github.com/DSUmjham/patch-hunter/tree/main/examples) directory of this repo.
+
+* [Flat JSON](https://github.com/DSUmjham/patch-hunter/blob/main/examples/firmware_diff_flat.json) representation of the firmware diff between old and new firmware.
 
 ![Flat JSON output](https://github.com/DSUmjham/patch-hunter/blob/main/images/json_flat.png?raw=true)
 
-* [Tree JSON](https://github.com/DSUmjham/patch-hunter/blob/main/examples/firmware_diff_tree.json) of firmware diff between old and new firmware.
+* [Tree JSON](https://github.com/DSUmjham/patch-hunter/blob/main/examples/firmware_diff_tree.json) representation of the firmware diff between old and new firmware.
 
 ![Tree JSON output](https://github.com/DSUmjham/patch-hunter/blob/main/images/json_tree.png?raw=true)
