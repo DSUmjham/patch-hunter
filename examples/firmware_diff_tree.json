@@ -1,0 +1,398 @@
+{
+  "modified": {
+    "outputs": {
+      "extractions": {
+        "openwrt-ar750-4.3.17-0607-1717690976.bin": {
+          "openwrt-ar750-4.3.17-0607-1717690976.bin.extracted": {
+            "27A115": {
+              "squashfs-root": {
+                "etc": {
+                  "files": [
+                    "glversion",
+                    "version.date",
+                    "version.type"
+                  ]
+                },
+                "usr": {
+                  "bin": {
+                    "files": [
+                      "fcgiwrap"
+                    ]
+                  },
+                  "lib": {
+                    "opkg": {
+                      "info": {
+                        "files": [
+                          "base-files.control",
+                          "dnsmasq-full.control",
+                          "getrandom.control",
+                          "gl-oui-rpc.control",
+                          "gl-sdk4-ovpn-client.control",
+                          "gl-sdk4-wg-client.control",
+                          "hostapd-common.control",
+                          "iwinfo.control",
+                          "kernel.control",
+                          "kmod-arptables.control",
+                          "kmod-ath.control",
+                          "kmod-ath10k-smallbuffers.control",
+                          "kmod-ath9k-common.control",
+                          "kmod-ath9k.control",
+                          "kmod-br-netfilter.control",
+                          "kmod-cfg80211.control",
+                          "kmod-crypto-aead.control",
+                          "kmod-crypto-ccm.control",
+                          "kmod-crypto-cmac.control",
+                          "kmod-crypto-crc32c.control",
+                          "kmod-crypto-ctr.control",
+                          "kmod-crypto-gcm.control",
+                          "kmod-crypto-gf128.control",
+                          "kmod-crypto-ghash.control",
+                          "kmod-crypto-hash.control",
+                          "kmod-crypto-hmac.control",
+                          "kmod-crypto-manager.control",
+                          "kmod-crypto-null.control",
+                          "kmod-crypto-rng.control",
+                          "kmod-crypto-seqiv.control",
+                          "kmod-crypto-sha256.control",
+                          "kmod-fs-ext4.control",
+                          "kmod-fs-ntfs.control",
+                          "kmod-fs-vfat.control",
+                          "kmod-gpio-button-hotplug.control",
+                          "kmod-ifb.control",
+                          "kmod-ip6tables.control",
+                          "kmod-ipt-conntrack-extra.control",
+                          "kmod-ipt-conntrack.control",
+                          "kmod-ipt-core.control",
+                          "kmod-ipt-extra.control",
+                          "kmod-ipt-ipopt.control",
+                          "kmod-ipt-ipset.control",
+                          "kmod-ipt-nat.control",
+                          "kmod-ipt-nat6.control",
+                          "kmod-ipt-raw.control",
+                          "kmod-lib-crc-ccitt.control",
+                          "kmod-lib-crc16.control",
+                          "kmod-lib-crc32c.control",
+                          "kmod-mac80211.control",
+                          "kmod-mii.control",
+                          "kmod-mtdoops.control",
+                          "kmod-nf-conntrack-netlink.control",
+                          "kmod-nf-conntrack.control",
+                          "kmod-nf-conntrack6.control",
+                          "kmod-nf-flow.control",
+                          "kmod-nf-ipt.control",
+                          "kmod-nf-ipt6.control",
+                          "kmod-nf-log.control",
+                          "kmod-nf-log6.control",
+                          "kmod-nf-nat.control",
+                          "kmod-nf-nat6.control",
+                          "kmod-nf-reject.control",
+                          "kmod-nf-reject6.control",
+                          "kmod-nfnetlink.control",
+                          "kmod-nft-compat.control",
+                          "kmod-nft-core.control",
+                          "kmod-nft-fib.control",
+                          "kmod-nft-nat.control",
+                          "kmod-nft-offload.control",
+                          "kmod-nls-base.control",
+                          "kmod-nls-cp437.control",
+                          "kmod-nls-iso8859-1.control",
+                          "kmod-nls-utf8.control",
+                          "kmod-phy-ath79-usb.control",
+                          "kmod-ppp.control",
+                          "kmod-pppoe.control",
+                          "kmod-pppox.control",
+                          "kmod-sched-core.control",
+                          "kmod-scsi-core.control",
+                          "kmod-slhc.control",
+                          "kmod-tun.control",
+                          "kmod-udptunnel4.control",
+                          "kmod-udptunnel6.control",
+                          "kmod-usb-acm.control",
+                          "kmod-usb-core.control",
+                          "kmod-usb-ehci.control",
+                          "kmod-usb-net-cdc-ether.control",
+                          "kmod-usb-net-cdc-ncm.control",
+                          "kmod-usb-net-huawei-cdc-ncm.control",
+                          "kmod-usb-net-ipheth.control",
+                          "kmod-usb-net-qmi-wwan.control",
+                          "kmod-usb-net-rndis.control",
+                          "kmod-usb-net.control",
+                          "kmod-usb-serial-option.control",
+                          "kmod-usb-serial-wwan.control",
+                          "kmod-usb-serial.control",
+                          "kmod-usb-storage.control",
+                          "kmod-usb-wdm.control",
+                          "kmod-usb2.control",
+                          "kmod-wireguard.control",
+                          "libiwinfo-data.control",
+                          "libiwinfo-lua.control",
+                          "libiwinfo20210430.control",
+                          "liblua5.3-5.3.control",
+                          "libuci-lua.control",
+                          "libuci20130104.control",
+                          "logd.control",
+                          "odhcp6c.control",
+                          "opkg.control",
+                          "uboot-envtools.control",
+                          "ubox.control",
+                          "uci.control",
+                          "wpad-openssl.control"
+                        ]
+                      },
+                      "files": [
+                        "status"
+                      ]
+                    },
+                    "oui-httpd": {
+                      "rpc": {
+                        "files": [
+                          "iwinfo",
+                          "ovpn-client.so",
+                          "ubus",
+                          "uci",
+                          "ui"
+                        ]
+                      }
+                    }
+                  },
+                  "sbin": {
+                    "files": [
+                      "gl-ngx-session",
+                      "odhcp6c"
+                    ]
+                  },
+                  "share": {
+                    "gl-ngx": {
+                      "files": [
+                        "oui-download.lua",
+                        "oui-rpc.lua",
+                        "oui-upload.lua"
+                      ]
+                    },
+                    "gl-upload.d": {
+                      "files": [
+                        "ovpnclient",
+                        "wgclient"
+                      ]
+                    }
+                  }
+                },
+                "www": {
+                  "cgi-bin": {
+                    "files": [
+                      "glc"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "openwrt-ar750-4.3.18-0823-1724397655.bin": {
+          "openwrt-ar750-4.3.18-0823-1724397655.bin.extracted": {
+            "27A115": {
+              "squashfs-root": {
+                "etc": {
+                  "files": [
+                    "glversion",
+                    "version.date",
+                    "version.type"
+                  ]
+                },
+                "usr": {
+                  "bin": {
+                    "files": [
+                      "fcgiwrap"
+                    ]
+                  },
+                  "lib": {
+                    "opkg": {
+                      "info": {
+                        "files": [
+                          "base-files.control",
+                          "dnsmasq-full.control",
+                          "getrandom.control",
+                          "gl-oui-rpc.control",
+                          "gl-sdk4-ovpn-client.control",
+                          "gl-sdk4-wg-client.control",
+                          "hostapd-common.control",
+                          "iwinfo.control",
+                          "kernel.control",
+                          "kmod-arptables.control",
+                          "kmod-ath.control",
+                          "kmod-ath10k-smallbuffers.control",
+                          "kmod-ath9k-common.control",
+                          "kmod-ath9k.control",
+                          "kmod-br-netfilter.control",
+                          "kmod-cfg80211.control",
+                          "kmod-crypto-aead.control",
+                          "kmod-crypto-ccm.control",
+                          "kmod-crypto-cmac.control",
+                          "kmod-crypto-crc32c.control",
+                          "kmod-crypto-ctr.control",
+                          "kmod-crypto-gcm.control",
+                          "kmod-crypto-gf128.control",
+                          "kmod-crypto-ghash.control",
+                          "kmod-crypto-hash.control",
+                          "kmod-crypto-hmac.control",
+                          "kmod-crypto-manager.control",
+                          "kmod-crypto-null.control",
+                          "kmod-crypto-rng.control",
+                          "kmod-crypto-seqiv.control",
+                          "kmod-crypto-sha256.control",
+                          "kmod-fs-ext4.control",
+                          "kmod-fs-ntfs.control",
+                          "kmod-fs-vfat.control",
+                          "kmod-gpio-button-hotplug.control",
+                          "kmod-ifb.control",
+                          "kmod-ip6tables.control",
+                          "kmod-ipt-conntrack-extra.control",
+                          "kmod-ipt-conntrack.control",
+                          "kmod-ipt-core.control",
+                          "kmod-ipt-extra.control",
+                          "kmod-ipt-ipopt.control",
+                          "kmod-ipt-ipset.control",
+                          "kmod-ipt-nat.control",
+                          "kmod-ipt-nat6.control",
+                          "kmod-ipt-raw.control",
+                          "kmod-lib-crc-ccitt.control",
+                          "kmod-lib-crc16.control",
+                          "kmod-lib-crc32c.control",
+                          "kmod-mac80211.control",
+                          "kmod-mii.control",
+                          "kmod-mtdoops.control",
+                          "kmod-nf-conntrack-netlink.control",
+                          "kmod-nf-conntrack.control",
+                          "kmod-nf-conntrack6.control",
+                          "kmod-nf-flow.control",
+                          "kmod-nf-ipt.control",
+                          "kmod-nf-ipt6.control",
+                          "kmod-nf-log.control",
+                          "kmod-nf-log6.control",
+                          "kmod-nf-nat.control",
+                          "kmod-nf-nat6.control",
+                          "kmod-nf-reject.control",
+                          "kmod-nf-reject6.control",
+                          "kmod-nfnetlink.control",
+                          "kmod-nft-compat.control",
+                          "kmod-nft-core.control",
+                          "kmod-nft-fib.control",
+                          "kmod-nft-nat.control",
+                          "kmod-nft-offload.control",
+                          "kmod-nls-base.control",
+                          "kmod-nls-cp437.control",
+                          "kmod-nls-iso8859-1.control",
+                          "kmod-nls-utf8.control",
+                          "kmod-phy-ath79-usb.control",
+                          "kmod-ppp.control",
+                          "kmod-pppoe.control",
+                          "kmod-pppox.control",
+                          "kmod-sched-core.control",
+                          "kmod-scsi-core.control",
+                          "kmod-slhc.control",
+                          "kmod-tun.control",
+                          "kmod-udptunnel4.control",
+                          "kmod-udptunnel6.control",
+                          "kmod-usb-acm.control",
+                          "kmod-usb-core.control",
+                          "kmod-usb-ehci.control",
+                          "kmod-usb-net-cdc-ether.control",
+                          "kmod-usb-net-cdc-ncm.control",
+                          "kmod-usb-net-huawei-cdc-ncm.control",
+                          "kmod-usb-net-ipheth.control",
+                          "kmod-usb-net-qmi-wwan.control",
+                          "kmod-usb-net-rndis.control",
+                          "kmod-usb-net.control",
+                          "kmod-usb-serial-option.control",
+                          "kmod-usb-serial-wwan.control",
+                          "kmod-usb-serial.control",
+                          "kmod-usb-storage.control",
+                          "kmod-usb-wdm.control",
+                          "kmod-usb2.control",
+                          "kmod-wireguard.control",
+                          "libiwinfo-data.control",
+                          "libiwinfo-lua.control",
+                          "libiwinfo20210430.control",
+                          "liblua5.3-5.3.control",
+                          "libuci-lua.control",
+                          "libuci20130104.control",
+                          "logd.control",
+                          "odhcp6c.control",
+                          "opkg.control",
+                          "uboot-envtools.control",
+                          "ubox.control",
+                          "uci.control",
+                          "wpad-openssl.control"
+                        ]
+                      },
+                      "files": [
+                        "status"
+                      ]
+                    },
+                    "oui-httpd": {
+                      "rpc": {
+                        "files": [
+                          "iwinfo",
+                          "ovpn-client.so",
+                          "ubus",
+                          "uci",
+                          "ui"
+                        ]
+                      }
+                    }
+                  },
+                  "sbin": {
+                    "files": [
+                      "gl-ngx-session",
+                      "odhcp6c"
+                    ]
+                  },
+                  "share": {
+                    "gl-ngx": {
+                      "files": [
+                        "oui-download.lua",
+                        "oui-rpc.lua",
+                        "oui-upload.lua"
+                      ]
+                    },
+                    "gl-upload.d": {
+                      "files": [
+                        "ovpnclient",
+                        "wgclient"
+                      ]
+                    }
+                  }
+                },
+                "www": {
+                  "cgi-bin": {
+                    "files": [
+                      "glc"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "added": {},
+  "removed": {
+    "outputs": {
+      "extractions": {
+        "openwrt-ar750-4.3.17-0607-1717690976.bin": {
+          "openwrt-ar750-4.3.17-0607-1717690976.bin.extracted": {
+            "27A115": {
+              "squashfs-root": {
+                "files": [
+                  "test.txt"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
