@@ -36,3 +36,6 @@ In addition to providing the extracted firmware samples, patch-hunter produces e
 * [Tree JSON](https://github.com/DSUmjham/patch-hunter/blob/main/examples/firmware_diff_tree.json) representation of the firmware diff between old and new firmware.
 
 ![Tree JSON output](https://github.com/DSUmjham/patch-hunter/blob/main/images/json_tree.png?raw=true)
+
+## Sample Firmware
+Two firmware files have been included in the [bins](https://github.com/DSUmjham/patch-hunter/tree/main/bins) directory. These files are two versions of an open-source WiFi router firmware, and can be used to test the installation and configuration of _patch-hunter_.
