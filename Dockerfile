@@ -1,6 +1,10 @@
 # use the latest Ubuntu LTS image
 FROM ubuntu:24.04
 
+LABEL org.opencontainers.image.source="https://github.com/dsumjham/patch-hunter"
+LABEL org.opencontainers.image.description="Firmware patch analysis utility packaged in Docker."
+LABEL org.opencontainers.image.licenses="MIT"
+
 # prevent interactive prompts during package installs
 ENV DEBIAN_FRONTEND=noninteractive
 
