@@ -12,6 +12,7 @@ jobs:
     permissions:
       contents: read
       packages: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -28,11 +29,13 @@ jobs:
 
       - name: Build and push multi-arch image
         uses: docker/build-push-action@v6
+        env:
+          OWNER_LC: ${{ github.repository_owner }}
         with:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            ghcr.io/${{ github.repository_owner,, }}/patch-hunter:latest
-            ghcr.io/${{ github.repository_owner,, }}/patch-hunter:${{ github.ref_name }}
+            ghcr.io/${{ toLower(env.OWNER_LC) }}/patch-hunter:latest
+            ghcr.io/${{ toLower(env.OWNER_LC) }}/patch-hunter:${{ github.ref_name }}
 
