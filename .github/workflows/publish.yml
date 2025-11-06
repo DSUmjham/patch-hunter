@@ -27,15 +27,17 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Convert owner name to lowercase
+        id: vars
+        run: echo "OWNER_LC=${GITHUB_REPOSITORY_OWNER,,}" >> $GITHUB_ENV
+
       - name: Build and push multi-arch image
         uses: docker/build-push-action@v6
-        env:
-          OWNER_LC: ${{ github.repository_owner }}
         with:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            ghcr.io/${{ toLower(env.OWNER_LC) }}/patch-hunter:latest
-            ghcr.io/${{ toLower(env.OWNER_LC) }}/patch-hunter:${{ github.ref_name }}
+            ghcr.io/${{ env.OWNER_LC }}/patch-hunter:latest
+            ghcr.io/${{ env.OWNER_LC }}/patch-hunter:${{ github.ref_name }}
 
