@@ -37,8 +37,8 @@ else
 fi
 
 # find the squashfs root within each extracted firmware sample
-OLD_ROOT=$(find "$OUTDIR/$OLD_FW" -type d -name squashfs-root | head -n 1)
-NEW_ROOT=$(find "$OUTDIR/$NEW_FW" -type d -name squashfs-root | head -n 1)
+OLD_ROOT=$(find "$OUTDIR/$OLD_FW" -type d \( -name squashfs-root -o -name cpio-root \) | head -n 1)
+NEW_ROOT=$(find "$OUTDIR/$NEW_FW" -type d \( -name squashfs-root -o -name cpio-root \) | head -n 1)
 if [[ -z "$OLD_ROOT" || -z "$NEW_ROOT" ]]; then
     echo "[!] Could not find squashfs-root in one of the firmwares!"
     exit 1
@@ -48,7 +48,6 @@ fi
 echo "[*] Comparing filesystem trees..."
 DIFF_OUT=/outputs/firmware_diff_flat.json
 
-echo "test" > "$OLD_ROOT/test.txt"
 diff -qr --no-dereference "$OLD_ROOT" "$NEW_ROOT" 2>&1 | awk -v old="$OLD_ROOT" -v new="$NEW_ROOT" '
 BEGIN {
     print "["    # start the JSON array
