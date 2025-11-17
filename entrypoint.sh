@@ -37,12 +37,29 @@ else
 fi
 
 # find the squashfs root within each extracted firmware sample
-OLD_ROOT=$(find "$OUTDIR/$OLD_FW" -type d \( -name squashfs-root -o -name cpio-root \) | head -n 1)
-NEW_ROOT=$(find "$OUTDIR/$NEW_FW" -type d \( -name squashfs-root -o -name cpio-root \) | head -n 1)
+find_rootfs() {
+    SEARCH_DIR="$1"
+    # search for any directory that contains typical rootfs directories
+    while IFS= read -r dir; do
+        if [[ -d "$dir/etc" || -d "$dir/bin" || -d "$dir/sbin" ]]; then
+            echo "$dir"
+            return 0
+        fi
+    done < <(find "$SEARCH_DIR" -type d)
+
+    return 1
+}
+
+OLD_ROOT=$(find_rootfs "$OUTDIR/$OLD_FW")
+NEW_ROOT=$(find_rootfs "$OUTDIR/$NEW_FW")
+
 if [[ -z "$OLD_ROOT" || -z "$NEW_ROOT" ]]; then
-    echo "[!] Could not find squashfs-root in one of the firmwares!"
+    echo "[!] Could not detect root filesystem in one of the firmware images!"
     exit 1
 fi
+
+echo "[+] OLD ROOTFS: $OLD_ROOT"
+echo "[+] NEW ROOTFS: $NEW_ROOT"
 
 # run recursive diff and only report differing files, comparing the old to new
 echo "[*] Comparing filesystem trees..."
